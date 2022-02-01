@@ -27,7 +27,39 @@ func main() {
 	app.Static("/static", "./static")
 
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.Render("index", fiber.Map{}, "layouts/main")
+		return c.Render("index", fiber.Map{}, "layouts/home")
+	})
+
+	app.Get("/join", func(c *fiber.Ctx) error {
+		return c.Render("pages/join", fiber.Map{
+			"title":       "Join",
+			"description": "Write articles, communicate, give your voice, design or contribute to our projets!",
+		}, "layouts/page")
+	})
+
+	app.Get("/blog", func(c *fiber.Ctx) error {
+		return c.Render("pages/blog", fiber.Map{
+			"title":       "",
+			"description": "",
+		}, "layouts/page")
+	})
+
+	app.Get("/about", func(c *fiber.Ctx) error {
+		return c.Render("pages/about", fiber.Map{
+			"title":       "About",
+			"description": "Who are we, what do we do and why it is a legitimate question?",
+		}, "layouts/page")
+	})
+
+	app.Get("/donate", func(c *fiber.Ctx) error {
+		return c.Render("pages/donate", fiber.Map{
+			"title":       "Donate",
+			"description": "Help us building resilient and safe organizing tools!",
+		}, "layouts/page")
+	})
+
+	app.Get("/tos", func(c *fiber.Ctx) error {
+		return c.SendFile("./static/TOS.txt")
 	})
 
 	listener := os.Getenv("SERVER_HOST") + ":" + os.Getenv("SERVER_PORT")
