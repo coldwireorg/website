@@ -1,14 +1,14 @@
-<div class="footer">
-  <div class="line">
+<footer>
+  <div class="column">
     <img src="/static/img/logo-full.svg" alt="">
+    <p>🄯 Your autonomous provider</p>
+  </div>
+  <div class="column">
     <div class="links">
       <a href="https://twitter.com/coldwirehq" target="_blank">Follow us on twitter</a>
-      <a href="#">Roadmap</a>
+      <a href="/about#roadmap">Roadmap</a>
       <a href="/tos" target="_blank">Term of service</a>
     </div>
-  </div>
-  <div class="line">
-    <p>🄯 Your autonomous provider</p>
     <a href="#" class="lang">
       <img src="/static/img/icons/arrow-down.svg" alt="">
       <img src="/static/img/icons/languages.svg" alt="">
@@ -18,7 +18,7 @@
 </div>
 
 <style>
-  .footer {
+  footer {
     position: absolute;
     bottom: 0;
     
@@ -28,24 +28,21 @@
 
     border-top: 1px solid var(--complementary-gray-3);
     display: flex;
-    flex-direction: column;
-  }
-
-  .footer .line {
-    height: 32px;
-    width: 100%;
-
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
 
-  .footer .line img {
-   max-height: 16px; 
+  footer .column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 
-  .footer .line .links {
+  footer .column img {
+    max-width: 132px;
+  }
+
+  footer .column .links {
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -53,20 +50,41 @@
     gap: 32px;
   }
 
-  .footer .line .links a {
+  footer .column .links a {
     color: var(--complementary-white-50);
   }
 
-  .footer .line p {
+  footer .column p {
     color: var(--complementary-white-50);
     font-size: 10px;
     line-height: 12px;
   }
 
-  .footer .line .lang {
+  footer .column .lang {
     display: flex;
     flex-direction: row;
     gap: 8px;
-    align-items: center;
+    justify-content: end;
+  }
+
+  @media only screen and (max-width: 1160px) {
+    footer {
+      position: unset;
+      margin: 32px 96px 0px 96px;
+    }
+  }
+
+  @media only screen and (max-width: 690px) {
+    footer .column .links {
+      flex-direction: column;
+      align-items: end;
+    }
+  }
+
+
+  @media only screen and (max-width: 495px) {
+    footer {
+      margin: 32px 32px 32px 32px;
+    }
   }
 </style>

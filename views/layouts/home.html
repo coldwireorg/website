@@ -7,15 +7,21 @@
 
 <body>
   {{template "components/nav" .}}
-  <div class="content">
+  <main>
     {{embed}}
-    {{template "components/footer" .}}
-  </div>
+  </main>
+  {{template "components/footer" .}}
 </body>
 
 <style>
-  .content {
+  main {
     margin: 128px 96px 0px 96px;
+  }
+
+  @media only screen and (max-width: 495px) {
+    main {
+      margin: 96px 32px 0px 32px;
+    }
   }
 </style>
 

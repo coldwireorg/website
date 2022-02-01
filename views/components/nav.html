@@ -20,7 +20,36 @@
   </div>
 </div>
 
+<div class="nav-mobile">
+  <a href="/"><img src="/static/img/logo.svg" alt=""></a>
+  <div class="links">
+    <a href="/donate" class="btn green">Donate</a>
+    <img src="/static/img/icons/menu.svg" alt="">
+  </div>
+</div>
+
 <style>
+  .nav-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 64px;
+
+    padding: 0 32px 0 32px;
+
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-mobile .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
   .nav {
     position: absolute;
     top: 0;
@@ -57,4 +86,14 @@
     /* to allow buttons to change text color */    
     color: var(--complementary-gray-2);
   }
+
+  @media only screen and (max-width: 845px) {
+    .nav {
+      display: none;
+    }
+
+    .nav-mobile {
+      display: flex;
+    }
+	}
 </style>
