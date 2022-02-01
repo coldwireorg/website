@@ -1,0 +1,73 @@
+<div class="footer">
+  <div class="line">
+    <img src="/static/img/logo-full.svg" alt="">
+    <div class="links">
+      <a href="#">Follow us on twitter</a>
+      <a href="#">Roadmap</a>
+      <a href="#">Privacy policy</a>
+      <a href="#">Term of service</a>
+    </div>
+  </div>
+  <div class="line">
+    <p>All material is licensed under CC BY-NC-SA 2.0 (2022)</p>
+    <a href="#" class="lang">
+      <img src="/static/img/icons/arrow-down.svg" alt="">
+      <img src="/static/img/icons/languages.svg" alt="">
+      English, USA
+    </a>
+  </div>
+</div>
+
+<style>
+  .footer {
+    position: absolute;
+    bottom: 0;
+    
+    right: 96px; left: 96px;
+    padding-top: 32px;
+    margin-bottom: 64px;
+
+    border-top: 1px solid var(--complementary-gray-3);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .line {
+    height: 32px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer .line img {
+   max-height: 16px; 
+  }
+
+  .footer .line .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .footer .line .links a {
+    color: var(--complementary-white-50);
+  }
+
+  .footer .line p {
+    color: var(--complementary-white-50);
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .footer .line .lang {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+  }
+</style>

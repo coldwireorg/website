@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {{template "components/header" .}}
+</head>
+
+<body>
+  {{template "components/nav" .}}
+  <div class="content">
+    {{embed}}
+    {{template "components/footer" .}}
+  </div>
+</body>
+
+<style>
+  .content {
+    margin: 128px 96px 0px 96px;
+  }
+</style>
+
+</html>
