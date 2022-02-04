@@ -114,7 +114,7 @@ p {
 /* white buttons */
 .white {
   background-color: white;
-  color: inherit;
+  color: var(--primary-green) !important;
 }
 
 .white:hover {
@@ -124,6 +124,7 @@ p {
 /* green buttons */
 .green {
   background-color: var(--primary-green);
+  color: var(--complementary-white);
 }
 
 .green:hover {

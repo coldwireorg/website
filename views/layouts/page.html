@@ -10,8 +10,8 @@
     {{template "components/nav" .}}
     <div class="header">
       <div class="infos">
-        <span>{{ .title }}
-        <h1>{{ .description }}</h1>
+        <span>{{ .infos.title }}
+        <h1>{{ .infos.description }}</h1>
       </div>
       <img src="/static/img/hello.svg" alt="">
     </div>
@@ -42,7 +42,7 @@
   .top .header .infos {
     display: flex;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 50%;
   }
 
   .top .header .infos h1 {
@@ -50,7 +50,39 @@
   }
 
   .content {
-    margin: 128px 96px 0px 96px;
+    margin: 64px 96px 0px 96px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .top {
+      height: auto;
+    }
+
+    .top .header {
+      position: unset;
+      flex-wrap: wrap;
+      padding-bottom: 64px;
+      margin: 64px 96px 0px 96px;
+    }
+
+    .top .header img {
+      display: none;
+    }
+
+    .top .header .infos {
+      min-width: 100%;
+    }
+	}
+
+  @media only screen and (max-width: 490px) {
+    .top .header {
+      padding-bottom: 32px;
+      margin: 32px 32px 0px 32px;
+    }
+
+    .content {
+      margin: 32px 32px 0px 32px;
+    }
   }
 </style>
 

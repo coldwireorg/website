@@ -8,7 +8,7 @@
     <a href="/join">Join</a>
     <a href="/blog">Blog</a>
     <a href="/about">About us</a>
-    <a href="/donate" class="btn green">Donate</a>
+    <a href="/donate" class="btn {{ .nav.color }}">Donate</a>
   </div>
   <div class="settings">
     <a href="https://auth.coldwire.org/sign-in">Sign in</a>
@@ -23,14 +23,27 @@
 <div class="nav-mobile">
   <a href="/"><img src="/static/img/logo.svg" alt=""></a>
   <div class="links">
-    <a href="/donate" class="btn green">Donate</a>
-    <img src="/static/img/icons/menu.svg" alt="">
+    <a href="/donate" class="btn {{ .nav.color }}">Donate</a>
+    <a href="#menu"><img id="open-menu-btn" src="/static/img/icons/menu.svg" alt=""></a>
+  </div>
+
+  <div id="menu" class="menu">
+    <a href="#"><img src="/static/img/icons/close.svg"></a>
+    <div class="links">
+      <a href="/join">Join</a>
+      <a href="/blog">Blog</a>
+      <a href="/about">About us</a>
+      <a href="/donate">Donate</a>
+      <div class="separator"></div>
+      <a href="https://auth.coldwire.org/sign-in">Sign in</a>
+      <a href="https://auth.coldwire.org/sign-up">Sign up</a>
+    </div>
   </div>
 </div>
 
 <style>
   .nav-mobile {
-    position: absolute;
+    position: unset;
     top: 0;
     left: 0;
     right: 0;
@@ -50,8 +63,50 @@
     gap: 16px;
   }
 
-  .nav {
+  .nav-mobile .menu:target {
+    display: flex;
+  }
+
+  .nav-mobile .menu {
+    display: none;
+
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    z-index: 50;
+
+    background-color: var(--complementary-gray-1);
+
+    align-items: center;
+  }
+
+  .nav-mobile .menu .separator {
+    border-bottom: 1px solid var(--complementary-gray-2);
+    width: 100%;
+  }
+
+
+  .nav-mobile .menu .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 36px;
+    line-height: 44px;
+    padding: 32px;
+    gap: 24px;
+  }
+
+  .nav-mobile .menu img {
     position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+  }
+
+
+  .nav {
+    position: unset;
     top: 0;
     left: 0;
     right: 0;
