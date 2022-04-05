@@ -59,7 +59,7 @@ body {
 	left: 0;
 	right: 0;
 
-	background-color: var(--complementary-gray-2);
+	background-color: var(--complementary-gray-1);
 
   font-family: Montserrat;
   font-style: normal;
@@ -80,10 +80,26 @@ span {
 	color: var(--complementary-white);
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 h1 {
 	font-size: 36px;
 	font-weight: 600;
   line-height: 42px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 p {
@@ -138,4 +154,19 @@ main {
 
 .green:hover {
   opacity: 0.8;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 32px;
+
+  min-width: 256px;
+  min-height: 256px;
+
+  background-color: var(--complementary-gray-2);
+  border: 1px solid var(--complementary-gray-3);
+  box-sizing: border-box;
+  border-radius: 8px;
 }
