@@ -1,0 +1,108 @@
+.nav-mobile {
+  position: unset;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 64px;
+
+  padding: 0 32px 0 32px;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-mobile .links {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-mobile .menu:target {
+  display: flex;
+}
+
+.nav-mobile .menu {
+  display: none;
+
+  position: fixed;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  z-index: 50;
+
+  background-color: var(--complementary-gray-1);
+
+  align-items: center;
+}
+
+.nav-mobile .menu .separator {
+  border-bottom: 1px solid var(--complementary-gray-2);
+  width: 100%;
+}
+
+
+.nav-mobile .menu .links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 36px;
+  line-height: 44px;
+  padding: 32px;
+  gap: 24px;
+}
+
+.nav-mobile .menu img {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+}
+
+.nav {
+  position: unset;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 64px;
+
+  padding: 0 32px 0 32px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav .links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .settings {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 32px;
+
+  /* to allow buttons to change text color */    
+  color: var(--complementary-gray-2);
+}
+
+@media only screen and (max-width: 845px) {
+  .nav {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+}

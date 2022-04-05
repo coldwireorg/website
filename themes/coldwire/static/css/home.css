@@ -1,0 +1,102 @@
+.background {
+  position: absolute;
+  top: 0; right: 0;
+  width: 100%;
+  height: 80%;
+  z-index: -10;
+  background: url(/img/background.svg) no-repeat center;
+  background-size: cover;
+}
+.people {
+  position: absolute;
+  top: 0; right: 10%;
+  width: 60%;
+  height: 85%;
+  z-index: -10;
+  background: url(/img/people.svg) no-repeat center;
+  background-size: contain;
+}
+.text {
+  max-width: 40%;
+  min-height: 60vh;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.card {
+  margin-top: 64px;
+  background: var(--primary-green);
+  border-radius: 8px;
+  max-width: 332px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 24px;
+}
+.card p {
+  margin: 0;
+}
+.card .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 16px;
+  /* to allow buttons to change text color */    
+  color: var(--primary-green);
+}
+@media only screen and (max-width: 1580px) {
+  .people {
+    width: 50%;
+    height: 65%;
+    top: 56px;
+  }
+}
+@media only screen and (max-width: 1410px) {
+  .people {
+    top: 90px;
+    width: 50%;
+    height: 55%;
+    background: url(/img/people-mobile.svg) no-repeat center;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .people {
+    top: 275px;
+    width: 30%;
+    height: 30%;
+  }
+  .background {
+    top: 128px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+  .text {
+    max-width: 100%;
+    z-index: 10;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .card {
+    box-sizing: border-box;
+  }
+  .card .buttons {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .card {
+    max-width: 100%;
+  }
+  .people {
+    position: unset;
+    margin-top: 32px;
+    width: 100%;
+    height: 300px;
+  }
+}

@@ -1,0 +1,4 @@
+baseURL = 'https://coldwire.org/'
+languageCode = 'en-us'
+title = 'Coldwire'
+theme = 'coldwire'

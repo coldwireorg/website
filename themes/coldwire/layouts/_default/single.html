@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+<div class="top">
+  {{ partial "nav.html" . }}
+  <div class="header">
+    <div class="infos">
+      <span>{{ .Title }}</span>
+      <h1>{{ .Description }}</h1>
+    </div>
+    <img src="/img/hello.svg" alt="">
+  </div>
+</div>
+<main class="content">
+  {{ .Content }}
+</main>
+
+{{ partial "footer.html" . }}
