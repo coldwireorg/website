@@ -12,6 +12,11 @@
   justify-content: space-between;
   align-items: center;
 }
+.top .header .peoples {
+  display: flex;
+  gap: 32px;
+  margin-right: -164px;
+}
 .top .header .infos {
   display: flex;
   flex-direction: column;

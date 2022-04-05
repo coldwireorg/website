@@ -1,0 +1,335 @@
+{{ partial "header.html" . }}
+
+<div class="top">
+  {{ partial "nav.html" . }}
+  <div class="header">
+    <div class="infos">
+      <span>{{ .Title }}</span>
+      <h1>{{ .Description }}</h1>
+    </div>
+    <div class="peoples">
+      <img src="/img/round.svg" alt="">
+      <img src="/img/hexagon.svg" alt="">
+      <img src="/img/square.svg" alt="">
+      <img src="/img/round.svg" alt="">
+    </div>
+  </div>
+</div>
+<main class="content">
+  <section class="about">
+    <div class="text">
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a efficitur augue, vitae tincidunt ipsum. Sed ut
+        porttitor sem, eget aliquam nibh. Morbi iaculis, dui nec volutpat dignissim, erat nisi feugiat erat, a facilisis
+        massa risus sed dui. Nullam et rutrum justo.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a efficitur augue, vitae tincidunt ipsum. Sed ut
+        porttitor sem, eget aliquam nibh. Morbi iaculis, dui nec volutpat dignissim, erat nisi feugiat erat, a facilisis
+        massa risus sed dui. Nullam et rutrum justo. Maecenas ornare ex ac augue vestibulum viverra. Integer ullamcorper
+        ornare cursus. Maecenas enim neque, tristique sit amet feugiat id, feugiat sed metus. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Ut a efficitur augue, vitae tincidunt ipsum. Sed ut porttitor sem, eget
+        aliquam nibh. Morbi iaculis, dui nec volutpat dignissim, erat nisi feugiat erat, a facilisis massa risus sed
+        dui. Nullam et rutrum justo. Maecenas ornare ex ac augue vestibulum viverra. Integer ullamcorper ornare cursus.
+        Maecenas enim neque, tristique sit amet feugiat id, feugiat sed metus.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a efficitur augue, vitae tincidunt ipsum. Sed ut
+        porttitor sem, eget aliquam nibh. Morbi iaculis, dui nec volutpat dignissim, erat nisi feugiat erat, a facilisis
+        massa risus sed dui. Nullam et rutrum justo. Maecenas ornare ex ac augue vestibulum viverra. Integer ullamcorper
+        ornare cursus. Maecenas enim neque, tristique sit amet feugiat id, feugiat sed metus. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Ut a efficitur augue, vitae tincidunt ipsum. Sed ut porttitor sem, eget
+        aliquam nibh. Morbi iaculis, dui nec volutpat dignissim, erat nisi feugiat erat, a facilisis massa risus sed
+        dui.</p>
+    </div>
+    <div class="team-wrapper">
+      <div class="team">
+        <div class="person">
+          <img src="/img/square.svg">
+          <span>Yakisoba <img src="/img/icons/designer.svg"></span>
+        </div>
+        <div class="person">
+          <img src="/img/round.svg">
+          <span>Unoe <img src="/img/icons/dev.svg"></span>
+        </div>
+        <div class="person">
+          <img src="/img/hexagon.svg">
+          <span>Pingu <img src="/img/icons/dev.svg"></span>
+        </div>
+        <div class="person">
+          <img src="/img/hexagon.svg">
+          <span>Monoko <img src="/img/icons/dev.svg"></span>
+        </div>
+
+        <div class="person">
+          <img src="/img/square.svg">
+          <span>Jeff <img src="/img/icons/dev.svg"></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="roadmap" class="roadmap">
+    <h2>Roadmap</h2>
+    <div class="milestones">
+      <div class="milestone"></div>
+      <div class="milestone"></div>
+      <div class="milestone"></div>
+      <div class="milestone"></div>
+      <div class="milestone"></div>
+      <div class="milestone"></div>
+      <div class="milestone"></div>
+      <div class="milestone"></div>
+    </div>
+  </section>
+  <section id="donate" class="donate">
+    <div class="text">
+      <h2>Donate</h2>
+      <p>Maintaining Coldwire is expensive, especially since we want to be independant from any third parties, this mean
+        that we have our own servers we built and configured by ourselves, our own network provider (AS131216) and there
+        is still a few full-time people, programmers, designers, lawyers working on this project and who need to survive
+        in the society, etc.</p>
+      <p>By donating your are allowing us to actively continue our mission of developing new resilient, safe, free and
+        accessible softwares, to help people all around the world to rise for their right while trying to be safe.</p>
+    </div>
+    <div class="info">
+      <div id="crypto" class="info-card">
+        <div class="title">
+          <h3>Cryptocurrencies</h3>
+        </div>
+        <div class="item">
+          <span class="label">Ethereum (ERC20)</span>
+          <div class="field">
+            <span>0x4d4053f36B4F85e3c812d3e1e00d3860A8abC770</span>
+            <img src="/img/icons/copy.svg">
+          </div>
+        </div>
+        <div class="item">
+          <span class="label">Monero</span>
+          <div class="field">
+            <span>4AdUndXHHZ6cfufTMvppY6JwXNouMBzSkbLYfpAV5Usx3skxNgYeYTRj5UzqtReoS44qo9mtmXCqY45DJ852K5Jv2684Rge</span>
+            <img src="/img/icons/copy.svg">
+          </div>
+        </div>
+        <div class="item">
+          <span class="label">Oxen</span>
+          <div class="field">
+            <span>bc1qmvrpvavdrfty6uctja3g9p4m3kppsu2cv6y0xg</span>
+            <img src="/img/icons/copy.svg">
+          </div>
+        </div>
+      </div>
+      <div id="bank" class="info-card">
+        <h3>Bank transfer</h3>
+        <div class="item">
+          <span class="pin">BANK</span>
+          <span>Swiss Post Finance</span>
+        </div>
+        <div class="item">
+          <span class="pin">IBAN</span>
+          <span>CH00 0000 0000 0000 0000 0</span>
+        </div>
+        <div class="item">
+          <span class="pin">ADDRESS</span>
+          <span>Polar Network Finances, Gare 24A, 1005 Lausanne, Switzerland</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{{ partial "footer.html" . }}
+
+<style>
+  .top .header {
+    top: 164px !important;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .content {
+      margin-left: 32px !important;
+      margin-right: 32px !important;
+    }
+
+    .content .about {
+      flex-wrap: wrap;
+    }
+
+    .content .about .team-wrapper .team {
+      gap: 32px;
+      height: unset !important;
+      margin-top: 32px;
+      margin-bottom: 64px;
+    }
+
+    .content .about .team-wrapper .team .person {
+      margin-left: 0px !important;
+    }
+  }
+
+  .content {
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+
+  .content .about {
+    display: flex;
+  }
+
+  .content .about .team-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .content .about .team-wrapper .team {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    max-width: 512px;
+    height: 300px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .content .about .team-wrapper .team .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+  }
+
+  .content .about .team-wrapper .team img {
+    width: 72px;
+  }
+
+  .content .about .team-wrapper .team span {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .content .about .team-wrapper .team span img {
+    max-width: 20px;
+  }
+
+  /* roadmap */
+
+  .content .milestones {
+    margin-top: 64px;
+    display: flex;
+    gap: 32px;
+    overflow: auto;
+    flex-wrap: nowrap;
+    width: 20000px;
+    margin-bottom: 64px;
+  }
+
+  .content .milestones .milestone {
+    height: 256px;
+    width: 256px;
+    border-radius: 50%;
+    background-color: var(--complementary-white-25);
+  }
+
+  /* donate */
+
+  .content .donate {
+    margin-left: -160px;
+    margin-right: -160px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 64px;
+
+    background: url(/img/donate-gradient.png) no-repeat top;
+    background-size: 100%;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .content .donate {
+      flex-wrap: wrap;
+
+      margin-left: -64px;
+      margin-right: -64px;
+      padding-left: 64px;
+      padding-right: 64px;
+      padding-top: 64px;
+    }
+
+    .content .donate .info {
+      width: 100%;
+    }
+  }
+
+  .content .donate .info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    align-items: center;
+  }
+
+  .content .donate .info #crypto .item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .content .donate .info #crypto .item .label {
+    color: var(--complementary-white-50);
+  }
+
+  .content .donate .info #crypto .item .field {
+    background-color: var(--complementary-gray-3);
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+
+    gap: 8px;
+
+    justify-content: space-between;
+  }
+
+  .content .donate .info #crypto .item .field span {
+    word-wrap: break-word;
+    max-width: 90%;
+  }
+
+  .content .donate .info #crypto .item .field img {
+    width: 16px;
+  }
+
+  .content .donate .info #bank .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .content .donate .info #bank .item .pin {
+    display: flex;
+    background-color: var(--complementary-gray-3);
+    align-items: center;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    color: rgba(240, 246, 252, 0.5);
+    font-size: 10px;
+
+    border-radius: 8px;
+  }
+
+  .info-card {
+    gap: 24px !important;
+    max-width: 60%;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .info-card {
+      max-width: 100%;
+    }
+  }
+</style>
